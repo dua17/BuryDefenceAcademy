@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Name of the website-->
+    <title>Bury Defence Academy</title>
+    <!-- connecting the stylesheet to this html page-->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google api to allow html of extracted font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link for font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- link reference to icons used-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="header">    
+    <nav> <!-- navigation bar -->
+        <!-- Inserts logo image and creates a link, where if the image is clicked the user will be taken back to the home page-->
+        <a href="index.html"><img src="images/BDA_logo.png" alt=""></a>
+        <!-- creates naviagtion bar links to other pages -->
+        <div class="nav-links" id="navLinks">
+        <!-- inserts icon promted by javascript, to hide menu option  -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul> <!--list of links to the other pages on the navbar --> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="classes.html">CLASSES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div> <!-- icon inserted, which is promted by javascript to show the menu option -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+        <!-- Heading/title page -->
+        <!-- full page background image & title along with tagline in bold-->
+    <div class="text-box">
+        <h1>BURY DEFENCE ACADEMY</h1>
+        <!-- tagline -->
+        <p> <strong> "Run by the community for the community"<br> 
+        Grassroots Martial Arts and Boxing Club,</strong> <br>
+        We aim to develop the potential of the people of bury<br> through amatuer sport
+        </p>
+        <a href="about.html" class="hero-btn">Visit Us to Know more</a>
+    </div>
+</section>
+
+<!-- HTML FOR THE SUMMARY SECTION -->
+
+        <!-- Heading and intorduction to the summary section-->
+<section class ="summary">
+    <h4>What we offer?</h4>
+    <p>Here are just some of the facilities we have to offer & our
+    registered Charity.<br> More information can be found on our About page
+    </p>
+        <!-- Images & caption including a coloured hover affcet over selected image-->
+    <div class="row">
+        <div class="summary-col">
+            <img src="images/boxing_two.jpg" alt="">
+            <div class="layer"></div>
+            <h3>Areas for Boxing, Cardio <br> & Martial Arts</h3>
+        </div>
+        <div class="summary-col">
+            <img src="images/registeredCharity.jpg" alt="">
+            <div class="layer"></div>
+            <h3>Registered Charity</h3>
+        </div>
+        <div class="summary-col">
+            <img src="images/balc&white.jpg" alt="">
+            <div class="layer"></div>
+            <h3>State-of-the-art <br> Equipment</h3>
+        </div>
+    </div>
+</section>
+<!-- Location section-->
+                            <!-- GoogleMaps API of the address and location -->
+<section class="location">
+   <section> 
+        <div class="address">
+            <h4>Where to find us</h4>
+            <p>Here's our address</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.056563492279!2d-2.2898776486939774!3d53.592452363851585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba58b3aaafc1b%3A0xdb4f5eb464a922a2!2sBury%20Defence%20Academy!5e0!3m2!1sen!2suk!4v1669372676299!5m2!1sen!2suk" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div> 
+    </section>
+                            <!-- 2 separated containers that include info about the address and opening hours-->
+    <div class="row">
+        <div class="location-col">
+            <h6>BURY DEFENCE ACADEMY <br>
+                Lord Street, Bury <br> Greater Manchester <br> BL9 0RE</h6>
+            <p>We also have several parking spaces as well a bike rack <br>
+            to keep your bike safe at the rear of the building!
+            </p>
+        </div>
+        <div class="location-col">
+            <h6>Our Opening Hours</h6>
+            <p>Monday : 6pm-9pm &nbsp; Tuesday: 7.30pm-9pm <br> Wednesday: 7pm-9pm &nbsp;&nbsp; Thursday: 6pm-9pm &nbsp;&nbsp;
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Friday: 7pm-9pm &nbsp;&nbsp;Saturday: 9.45am-2pm <br>Sunday: 10am-5pm
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities -->
+
+<section class="facilities">
+    <h4>Our Facilities</h4>
+    <p>Here are some facilities that are available at our gym</p>
+
+    <div class="row">
+        <!--  creates row of three containers -->
+        <div class="facilities-col">
+            <img src="images/Boxing_Ring.jpg" alt="">
+            <h3>Boxing Ring</h3>
+            <p>Our gym has two boxing rings dedicated to sparring. <br>
+            These can be used at anytime when the gym is open & <br> boxing equipment is also free to use.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/mat.jpg" alt="">
+            <h3>Martial Arts Area</h3>
+            <p>A dedicated mat area mainly used for martial arts & wrestling. <br>
+            Sambo and BJJ classes are also held here, For more <br> information select the 
+        classes page.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/equipment.jpg" alt="">
+            <h3>Equipment</h3>
+            <p>There is a section within the gym where equipment is available. <Br>
+            Machines such as Treadmills, Bikes, Crosstrainers & more also widely accessible. <br>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Reviews -->
+
+<section class="testimonials">
+    <h4>What Our Members say</h4>
+    <p>Here are reviews from some of our members</p>
+    <!-- row that puts the 2 testimonials togther -->
+    <div class="row">
+        <div class="testimonials-col">
+            <!-- user image -->
+            <img src="images/KM.png" alt="">
+            <div>
+                <p>"took my children to a boxing lesson and my children loved it. 
+                    can't recommend them enough. really professional and know how to communicate with the children.
+                    thank you so much for today. see you next Saturday"</p>
+                <h6>Kelly Marie</h6>
+                <!-- extracted star icon used to create a rating -->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <!-- user image -->
+            <img src="images/TA.png" alt="">
+            <div>
+                <p>"I have attended a class once in the last week and the lads 
+                    who run the place are very nice and hospitable. 
+                    They've done a fantastic job getting the place up and running. 
+                    I'm hoping to join the Friday evening fitness class this week to shed some weight"</p>
+                <h6>Tahir Ali</h6>
+                <!-- extracted star icons -->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Action calling -->
+<section class="cta">
+    <h1>Join our Membership</h1>
+    <!-- 'join us' button which leads to the contact page  -->
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!-- Footer -->
+
+
+<section class="footer">
+    <h4> Contact Us</h4>
+    <!-- contact information -->
+    <p>General Enquires: info@buryacademy.co.uk <br>Bury Defence Academy Enquires:defence@buryacademy.co.uk <br>
+    Contact No: 07787852982 <br>Charity No: 1196825
+    </p>
+    <div class="icons">
+        <!-- social media icons -->
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+    </div>
+</section>
+
+<!-- JavaScript for toggling menu -->
+<script>
+
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }  
+</script>
+
+</body>
+</html>

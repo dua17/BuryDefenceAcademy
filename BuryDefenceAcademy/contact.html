@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Name of the website-->
+    <title>Bury Defence Academy</title>
+    <!-- connecting the stylesheet to this html page-->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google api to allow html of extracted font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link for font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- link reference to icons used-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">    
+        <nav> <!-- navigation bar -->
+            <!-- Inserts logo image and creates a link, where if the image is clicked the user will be taken back to the home page-->
+            <a href="index.html"><img src="images/BDA_logo.png" alt=""></a>
+            <!-- creates naviagtion bar links to other pages -->
+            <div class="nav-links" id="navLinks">
+            <!-- inserts icon promted by javascript, to hide menu option  -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul> <!--list of links to the other pages on the navbar --> 
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </div> <!-- icon inserted, which is promted by javascript to show the menu option -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1>Contact</h1>
+   </section>
+ 
+<!-- Contact Us Page Content -->
+
+<section class="address">
+    <h4>How to find us using Google Maps!</h4>
+    <!-- Google Maps API link to show interactive map view -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.056563492279!2d-2.2898776486939774!3d53.592452363851585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba58b3aaafc1b%3A0xdb4f5eb464a922a2!2sBury%20Defence%20Academy!5e0!3m2!1sen!2suk!4v1669372676299!5m2!1sen!2suk" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+<!-- contact info 'row class' -->
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div> <!-- map icon -->
+                <i class="fa fa-map-marker"></i>
+                    <!-- address information  -->
+                    <h2><strong>Lord Street, Bury</strong></h2>
+                    <p>Greater Manchester, BL9 0RE</p>
+            </div>
+            <div>  <!-- phone icon   -->
+                <i class="fa fa-phone"></i>
+                     <!-- tel no information -->
+                    <h2><strong>+44 07787852892</strong></h2>
+                    <p>Monday to Sunday, 6pm to 9pm</p>
+            </div>
+            <div>  <!-- mail icon -->
+                <i class="fa fa-envelope"></i>
+                     <!-- email information + link to direct inbox -->
+                    <h2><strong>info@buryacademy.co.uk</strong></h2>
+                    <p>Email us for any Enquires</p>
+                    <a href="mailto:info@buryacademy.co.uk">Click here to Email Us!</a>
+            </div>
+        </div>
+
+    <div class="contact-col">
+        <!-- action form to get into contact with a query -->
+        <form action="#">
+            <script>document.querySelector("form").setAttribute("action", "")</script>
+            <!-- allows users to enter their name   -->
+            <input type="text" placeholder="Enter your name" required>
+            <!-- allows users to input their email -->
+            <input type="email" placeholder="Enter your email" required>
+            <!--  allows user to enter the subject of their message  -->
+            <input type="text" placeholder="Enter your subject" required>
+            <!-- expandable space available for users to enter their query/message -->
+            <textarea rows="8" placeholder="Message" required> </textarea>
+            <!-- message to confirm form details and send to BDA  -->
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+
+    </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <h4> Contact Us</h4>
+    <p>General Enquires: info@buryacademy.co.uk <br>Bury Defence Academy Enquires:defence@buryacademy.co.uk <br>
+    Contact No: 07787852982 <br>Charity No: 1196825
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+    </div>
+</section>
+
+<!-- JavaScript for toggling menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }   
+</script>
+</body>
+</html>

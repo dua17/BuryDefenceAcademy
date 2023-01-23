@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Name of the website-->
+    <title>Bury Defence Academy</title>
+    <!-- connecting the stylesheet to this html page-->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google api to allow html of extracted font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link for font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- link reference to icons used-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">    
+    <nav> <!-- navigation bar -->
+        <!-- Inserts logo image and creates a link, where if the image is clicked the user will be taken back to the home page-->
+        <a href="index.html"><img src="images/BDA_logo.png" alt=""></a>
+        <!-- creates naviagtion bar links to other pages -->
+        <div class="nav-links" id="navLinks">
+        <!-- inserts icon promted by javascript, to hide menu option  -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul> <!--list of links to the other pages on the navbar --> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="classes.html">CLASSES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div> <!-- icon inserted, which is promted by javascript to show the menu option -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Classes</h1>
+   </section>
+
+   <!-- Facilities -->
+
+
+<section class="facilities">
+    <h4>Our Classes</h4>
+    <p>Here are the classes we have to offer and the times they are available</p>
+
+    <div class="row">
+        <!-- row of 3 images & caption -->
+        <div class="facilities-col">
+            <img src="images/wrestling.jpg" alt="">
+            <h3>Wrestling</h3>
+            <p>At Bury Defence Acacemy we offer classes for young people aged from
+                14-16 year olds as well as Female Only classes.<Br>
+                Boxing classes are lead by coaches 'Shaz Bugzy' and 'Michelle'
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/MMA.jpg" alt="">
+            <h3>MMA</h3>
+            <p>All of our MMA classes are ledy by coaches Malichi Edwards and
+                Ibrahim Al Faqih-Hassan. <br> Note that our MMA classes are only for 14+
+                and we don't reccomend young children participate in our MMA classes   
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/Muay_Thai.jpg" alt="">
+            <h3>Muay Thai</h3>
+            <p>Muay Thai Classes are served as both technique and sparring classes.
+               <br> These classes are lead by coach Prince Owuh, and are only 
+                for those that are 14+
+            </p>
+        </div>    
+    </div>
+
+    <div class="row">
+        <!-- another row of 3 images & caption -->
+        <div class="facilities-col">
+            <img src="images/boxing.jpg" alt="">
+           <h3>  Boxing</h3>
+            <p>At Bury Defence Acacemy we offer juniors boxing classes as well as Female Only classes.<Br>
+                Boxing classes are lead by coaches Shaz Bugzy and Michelle
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/BJJ.jpg" alt="">
+            <h3>Circuit Training</h3>
+            <p>At BDA we offer both GI and non GI classes. <br>
+            All BJJ classes are led by coaches Ibrahim Al Faqih-Hassan and Coach Hasnaat </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/sambo.jpg" alt="">
+            <h3>Combat Sambo</h3>
+            <p>Our combat sambo classes are reccomended by ages 14  and above and are led 
+            by Coach Ameur Ammar </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Timetable -->
+  
+<section>
+    
+<div class="table-box">
+    <h4>Limited Classes Timetable</h4>
+    <p>Here is a timetable for some of our current classes</p>
+    <!-- first timetable row -->
+<div class="table-row table-head">
+    <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <h3><strong>Boxing</strong></h3>
+    </div>
+    <div class="table-cell">
+    <h3><strong>Muay Thai</strong></h3>
+    </div>
+    <div class="table-cell">
+    <h3><strong>BJJ</strong></h3>
+    </div>
+</div>
+<div class="table-row">
+     <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <p><strong> MONDAY 6:00pm - 7:30pm <br></strong>
+    Bury ABC class</p>
+    </div>
+    <div class="table-cell">
+    <p><strong> MONDAY 7:30pm - 9:00pm</strong> <br>
+    (Age: 14+)</p>
+    </div>
+     <!-- last cell  -->
+    <div class="table-cell last-cell">
+    <p><strong> TUESDAY 7:30pm - 9:00pm</strong> <br>
+        (no GI)</p>
+    </div>
+</div>
+<div class="table-row">
+     <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <p><strong> TUESDAY 6:30pm - 7:30pm</strong><br>
+    Females Only</p>
+    </div>
+    <div class="table-cell">
+    <p><strong> WEDNESDAY 7:30pm - 9:00pm</strong> <br>
+    Juniors Class</p>
+    </div>
+    <!-- last cell  -->
+    <div class="table-cell last-cell">
+    <p><strong> WEDNESDAY 5:30pm - 7:30pm</strong> <br>
+    (Age: 14+)</p>
+    </div>
+</div>
+<div class="table-row">
+    <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <p><strong> THURSDAY 6:30pm - 7:30pm</strong> <br>
+    Adults class</p>
+    </div>
+    <div class="table-cell">
+    <p><strong> THURSDAY 7:30pm - 9:00pm</strong> <br>
+    Drop-in Session</p>
+    </div>
+    <!-- last cell  -->
+    <div class="table-cell last-cell">
+    <p><strong> FRIDAY 5:30pm - 7:30pm</strong> <br>
+    Womens Only Class</p>
+    </div>
+</div>
+<div class="table-row">
+    <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <p><strong> SATURDAY 9:30am - 11:30am</strong> <br>
+    Womens Only</p>
+    </div>
+    <div class="table-cell">
+    <p><strong> SATURDAY 12:00pm - 2:00pm</strong><br>
+    Juniors Class</p>
+    </div>
+    <!-- last cell  -->
+    <div class="table-cell last-cell">
+    <p><strong> SATURDAY 5:30pm - 7:30pm</strong><br>
+    (Age: 18+)</p>
+    </div>
+</div>
+<div class="table-row">
+    <!-- first cell  -->
+    <div class="table-cell first-cell">
+    <p><strong> SUNDAY 9:30am - 11:30am</strong> <br>
+    (Age: 18+)</p>
+    </div>
+    <div class="table-cell">
+    <p><strong> SUNDAY 12:00pm - 2:00pm</strong> <br>
+    Drop-in session</p>
+    </div>
+    <!-- last cell  -->
+    <div class="table-cell last-cell">
+    <p><strong> SUNDAY 5:30pm - 7:30pm</strong> <br>
+    (Age: 14+)</p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4> Contact Us</h4>
+    <!--  contact info  -->
+    <p>General Enquires: info@buryacademy.co.uk <br>Bury Defence Academy Enquires:defence@buryacademy.co.uk <br>
+    Contact No: 07787852982 <br>Charity No: 1196825
+    </p>
+    <!-- soial media icons -->
+    <div class="icons">
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+    </div>
+</section>
+
+<!-- JavaScript for Toggling menu -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }   
+</script>
+</body>
+</html>

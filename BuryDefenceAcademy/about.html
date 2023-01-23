@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Name of the website-->
+    <title>Bury Defence Academy</title>
+    <!-- connecting the stylesheet to this html page-->
+    <link rel="stylesheet" href="style.css">
+    <!-- preconnecting to google api to allow html of extracted font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link for font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- link reference to icons used-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">    
+    <nav> <!-- navigation bar -->
+        <!-- Inserts logo image and creates a link, where if the image is clicked the user will be taken back to the home page-->
+        <a href="index.html"><img src="images/BDA_logo.png" alt=""></a>
+        <!-- creates naviagtion bar links to other pages -->
+        <div class="nav-links" id="navLinks">
+        <!-- inserts icon promted by javascript, to hide menu option  -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul> <!--list of links to the other pages on the navbar --> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="classes.html">CLASSES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div> <!-- icon inserted, which is promted by javascript to show the menu option -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+   </section>
+
+<!-- About Us Page Comment -->
+
+<section class="about-us">
+    <!-- container  -->
+    <div class="row">
+        <div class="about-col">
+            <!-- 'mission statement' heading -->
+            <h4>MISSION STATEMENT</h4>
+            <!-- mission statement content-->
+            <p>Bury Defence Academy is a martial arts and boxing club, <br><strong>"Run by the Community for the 
+            community"</strong>.<br>
+            Our goal is to help develop the potential of the people of Bury, whilst being 
+            able to give back to our community.We also work with organisations and sponsors to improve wellbeing and to educate 
+            the young people in our community. <br>
+            We are currently working with a partner organisation to
+            divert young people away from crime.Our main goal as a charitable institution, is to recycle back profits into our gym community
+            and the community of Bury.<br>
+            Our journey hasn't been easy but we would like to thank each and every person who has supported
+            us on this journey"<br>
+            </p>
+            <!-- button which links to the classes page, allowing the user to see what classes are offered -->
+            <a href="classes.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <!-- collage image insertion-->
+        <img src="images/box_collage.png" alt="">
+    </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4> Contact Us</h4>
+    <!-- contact info-->
+    <!-- direct link to mail -->
+    <p>General Enquires: <a href="mailto:info@buryacademy.co.uk">Click here for general enquiries</a>
+        info@buryacademy.co.uk <br>Bury Defence Academy Enquires:defence@buryacademy.co.uk <br>
+    Contact No: 07787852982 <br>Charity No: 1196825
+    </p>
+    <div class="icons">
+        <!-- social media icons -->
+        <i class="fa fa-facebook"></i> 
+        <i class="fa fa-twitter"></i> 
+        <i class="fa fa-instagram"></i> 
+    </div>
+</section>
+
+<!-- JavaScript for menu toggling -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }   
+</script>
+</body>
+</html>
